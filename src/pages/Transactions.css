@@ -1,0 +1,259 @@
+.transactions-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.controls-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.filters-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-icon {
+  color: var(--text-muted);
+}
+
+.filter-item select {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.filter-item select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.transactions-list-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.transactions-table th {
+  padding: 1rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-bottom: 2px solid var(--border-color);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.transactions-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.transactions-table tr:hover {
+  background-color: rgba(59, 130, 246, 0.02);
+}
+
+.recurring-row {
+  border-left: 3px solid var(--primary-color);
+}
+
+.t-date {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.recurring-icon {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.t-notes {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.t-category-badge {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.t-amount-cell {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.t-amount-cell.income {
+  color: var(--success-color);
+}
+
+.t-amount-cell.expense {
+  color: var(--danger-color);
+}
+
+.t-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.recurring-badge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  background-color: hsla(var(--primary-color-hsl), 0.15);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.action-text-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.action-text-btn.edit {
+  color: var(--primary-color);
+  background-color: hsla(var(--primary-color-hsl), 0.1);
+}
+
+.action-text-btn.edit:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px hsla(var(--primary-color-hsl), 0.3);
+}
+
+.action-text-btn.delete {
+  color: var(--danger-color);
+  background-color: hsla(var(--danger-color-hsl), 0.1);
+}
+
+.action-text-btn.delete:hover {
+  background-color: var(--danger-color);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px hsla(var(--danger-color-hsl), 0.3);
+}
+
+.action-text-btn:active {
+  transform: scale(0.97);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+
+.modal-close-btn:hover {
+  color: var(--danger-color);
+}
