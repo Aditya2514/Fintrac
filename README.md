@@ -22,7 +22,9 @@
 ---
 
 <!-- Human Workstation Mockup Banner -->
-<img src="public/assets/human-workspace-mockup.svg" width="100%" alt="Fintrac Workstation Experience" />
+<p align="center">
+  <img src="./public/assets/human-workspace-mockup.png" width="100%" alt="Fintrac Workstation Experience" />
+</p>
 
 </div>
 
@@ -45,7 +47,9 @@ By ingesting real-time cash flow, multi-account balances, and category budget li
 
 <br />
 
-<img src="public/assets/dashboard-view.svg" width="100%" alt="Fintrac Dashboard Overview" />
+<p align="center">
+  <img src="./public/assets/dashboard-view.png" width="100%" alt="Fintrac Dashboard Overview" />
+</p>
 
 <br /><br />
 
@@ -54,7 +58,9 @@ By ingesting real-time cash flow, multi-account balances, and category budget li
 
 <br />
 
-<img src="public/assets/ai-advisor-view.svg" width="100%" alt="Fintrac AI Advisor Interface" />
+<p align="center">
+  <img src="./public/assets/ai-advisor-view.png" width="100%" alt="Fintrac AI Advisor Interface" />
+</p>
 
 </div>
 
@@ -102,7 +108,7 @@ Fintrac is designed with a modular, client-side architecture that eliminates bac
 <br />
 
 <div align="center">
-  <img src="public/assets/system-architecture.svg" width="100%" alt="Fintrac System Architecture" />
+  <img src="./public/assets/system-architecture.png" width="100%" alt="Fintrac System Architecture" />
 </div>
 
 <br />
