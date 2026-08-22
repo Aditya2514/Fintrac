@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <linearGradient id="reactGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="contextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="geminiGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="500" rx="12" fill="url(#archBg)"/>
+
+  <!-- Diagram Title -->
+  <text x="40" y="45" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">Fintrac Architecture &amp; Data Flow Engine</text>
+  <text x="40" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">High-performance React 19 + Vite 8 stack paired with Google Gemini REST API</text>
+
+  <!-- Layer 1: Client UI Layer -->
+  <g transform="translate(40, 95)" filter="url(#shadowBox)">
+    <rect width="280" height="360" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
+    <rect width="280" height="34" rx="10" fill="url(#reactGrad)"/>
+    <text x="16" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">1. PRESENTATION LAYER (REACT 19)</text>
+
+    <!-- Components list -->
+    <g transform="translate(16, 50)">
+      <rect width="248" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="20" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🖥️ Dashboard &amp; Analytics</text>
+      <text x="12" y="34" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Recharts pie/bar/line data visualizers</text>
+
+      <rect y="52" width="248" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="72" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">📑 Transactions &amp; Budget Manager</text>
+      <text x="12" y="86" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">React Hook Form + Yup validations</text>
+
+      <rect y="104" width="248" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="124" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="11" font-weight="700">💬 AI Advisor Chat Interface</text>
+      <text x="12" y="138" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">ReactMarkdown rendering &amp; session state</text>
+
+      <rect y="156" width="248" height="42" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="176" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">📊 AI Expense Audit Report</text>
+      <text x="12" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Structured markdown audit report view</text>
+
+      <rect y="208" width="248" height="80" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="226" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🎨 Design System Tokens</text>
+      <text x="12" y="242" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• Framer Motion dynamic transitions</text>
+      <text x="12" y="258" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• HSL-tailored Dark/Light CSS themes</text>
+      <text x="12" y="274" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• CurrencyContext formatter utilities</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(325, 260)">
+    <line x1="0" y1="0" x2="55" y2="0" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 4"/>
+    <polygon points="55,-6 65,0 55,6" fill="#38bdf8"/>
+  </g>
+
+  <!-- Layer 2: State & Data Synchronization Layer -->
+  <g transform="translate(395, 95)" filter="url(#shadowBox)">
+    <rect width="280" height="360" rx="10" fill="#1e293b" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect width="280" height="34" rx="10" fill="url(#contextGrad)"/>
+    <text x="16" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">2. STATE &amp; STORE LAYER (CONTEXT API)</text>
+
+    <g transform="translate(16, 50)">
+      <rect width="248" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="20" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">📦 FinanceContext Provider</text>
+      <text x="12" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Global transactions array, budget limits, CRUD handlers</text>
+
+      <rect y="60" width="248" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="80" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">💱 CurrencyContext Provider</text>
+      <text x="12" y="96" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Multi-currency state (USD, EUR, GBP, INR, JPY, CAD)</text>
+
+      <rect y="120" width="248" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="140" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🌓 ThemeContext Provider</text>
+      <text x="12" y="156" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Light / Dark theme toggle &amp; persistence</text>
+
+      <rect y="180" width="248" height="110" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="200" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">💾 Persistence &amp; Services</text>
+      <text x="12" y="218" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• LocalStorage sync for offline stability</text>
+      <text x="12" y="234" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• SessionStorage chat conversation caching</text>
+      <text x="12" y="250" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• buildFinancialContext aggregator engine</text>
+      <text x="12" y="266" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• Dynamic income/expense category totals</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(680, 260)">
+    <line x1="0" y1="0" x2="55" y2="0" stroke="#a855f7" stroke-width="3" stroke-dasharray="6 4"/>
+    <polygon points="55,-6 65,0 55,6" fill="#a855f7"/>
+  </g>
+
+  <!-- Layer 3: AI Intelligence Service Layer -->
+  <g transform="translate(750, 95)" filter="url(#shadowBox)">
+    <rect width="310" height="360" rx="10" fill="#1e293b" stroke="#ea580c" stroke-width="1.5"/>
+    <rect width="310" height="34" rx="10" fill="url(#geminiGrad2)"/>
+    <text x="16" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">3. AI ENGINE (GEMINI REST API)</text>
+
+    <g transform="translate(16, 50)">
+      <rect width="278" height="60" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="20" fill="#fb923c" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🤖 Google Gemini 2.5 Flash API</text>
+      <text x="12" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Endpoint: generativelanguage.googleapis.com</text>
+      <text x="12" y="50" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Model: gemini-2.5-flash</text>
+
+      <rect y="70" width="278" height="60" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="90" fill="#fb923c" font-family="system-ui, sans-serif" font-size="11" font-weight="700">⚡ chatWithAdvisor Service</text>
+      <text x="12" y="106" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Streams net cash flow, income/expense breakdown &amp;</text>
+      <text x="12" y="120" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">budget targets into model system instructions</text>
+
+      <rect y="140" width="278" height="60" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="160" fill="#fb923c" font-family="system-ui, sans-serif" font-size="11" font-weight="700">📊 analyzeExpenses Auditor</text>
+      <text x="12" y="176" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Evaluates category spending ratios, fixed cash burn,</text>
+      <text x="12" y="190" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">and outputs formatted markdown action directives</text>
+
+      <rect y="210" width="278" height="80" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="228" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🔑 Security &amp; Key Handling</text>
+      <text x="12" y="244" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• VITE_GEMINI_API_KEY environment fallback</text>
+      <text x="12" y="260" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• In-app ApiKeyPrompt modal for user keys</text>
+      <text x="12" y="276" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">• Zero backend dependency, client-side execution</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#070a10"/>
+    </linearGradient>
+
+    <linearGradient id="sidebarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <linearGradient id="primaryCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="purpleAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1100" height="620" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1100" height="54" fill="#1e293b" opacity="0.7"/>
+  <circle cx="28" cy="27" r="6" fill="#ef4444"/>
+  <circle cx="46" cy="27" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="27" r="6" fill="#10b981"/>
+
+  <!-- Logo -->
+  <text x="95" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="900" letter-spacing="1">FINTRAC</text>
+
+  <!-- Nav links -->
+  <text x="230" y="32" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Dashboard</text>
+  <text x="330" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Transactions</text>
+  <text x="440" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Budget</text>
+  <text x="520" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Analytics</text>
+  <text x="610" y="32" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="12" font-weight="700">✨ AI Advisor</text>
+  <text x="710" y="32" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">⚡ AI Audit</text>
+
+  <!-- User Profile Badge -->
+  <circle cx="1040" cy="27" r="14" fill="#3b82f6"/>
+  <text x="1034" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">AK</text>
+
+  <!-- Main Content Layout -->
+  <!-- Header Title -->
+  <text x="40" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">My Finances Dashboard</text>
+  <text x="40" y="108" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Live currency context: USD ($)</text>
+
+  <!-- Top Metric Cards Grid (4 Cards) -->
+  <!-- Card 1: Total Balance -->
+  <g transform="translate(40, 126)" filter="url(#shadow)">
+    <rect width="235" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect width="235" height="100" rx="10" fill="url(#primaryCard)"/>
+    <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">NET BALANCE</text>
+    <text x="16" y="60" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$24,890.00</text>
+    <text x="16" y="82" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Car Goal Progress: 82%</text>
+    <rect x="130" y="74" width="85" height="6" rx="3" fill="#334155"/>
+    <rect x="130" y="74" width="70" height="6" rx="3" fill="#3b82f6"/>
+  </g>
+
+  <!-- Card 2: Income -->
+  <g transform="translate(295, 126)" filter="url(#shadow)">
+    <rect width="235" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TOTAL INCOME</text>
+    <text x="16" y="60" fill="#34d399" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$14,250.00</text>
+    <text x="16" y="82" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Primary: Tech Consulting</text>
+  </g>
+
+  <!-- Card 3: Expenses -->
+  <g transform="translate(550, 126)" filter="url(#shadow)">
+    <rect width="235" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TOTAL EXPENSES</text>
+    <text x="16" y="60" fill="#f87171" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$4,860.00</text>
+    <text x="16" y="82" fill="#f87171" font-family="system-ui, sans-serif" font-size="10">34% of Income</text>
+  </g>
+
+  <!-- Card 4: Total Savings -->
+  <g transform="translate(805, 126)" filter="url(#shadow)">
+    <rect width="255" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TOTAL SAVINGS</text>
+    <text x="16" y="60" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$9,390.00</text>
+    <text x="16" y="82" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="10">Emergency Reserve Active</text>
+  </g>
+
+  <!-- Middle Row: Accounts Breakdown + Spending Budget Progress -->
+  <!-- Accounts Summary -->
+  <g transform="translate(40, 246)" filter="url(#shadow)">
+    <rect width="320" height="180" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Account Balances</text>
+
+    <!-- Cash -->
+    <text x="20" y="68" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">💵 Cash Account</text>
+    <text x="220" y="68" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">$2,450.00</text>
+    <line x1="20" y1="80" x2="300" y2="80" stroke="#334155" stroke-width="1"/>
+
+    <!-- Savings -->
+    <text x="20" y="108" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">🏦 High Yield Savings</text>
+    <text x="220" y="108" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">$9,390.00</text>
+    <line x1="20" y1="120" x2="300" y2="120" stroke="#334155" stroke-width="1"/>
+
+    <!-- Online / Checking -->
+    <text x="20" y="148" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">💳 Primary Checking</text>
+    <text x="220" y="148" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">$13,050.00</text>
+  </g>
+
+  <!-- Spending Budget Allocation -->
+  <g transform="translate(380, 246)" filter="url(#shadow)">
+    <rect width="680" height="180" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Category Spending Budget Limits</text>
+
+    <!-- Housing -->
+    <g transform="translate(20, 50)">
+      <text x="0" y="14" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">🏠 Housing &amp; Rent</text>
+      <text x="220" y="14" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">$1,600 / $1,800</text>
+      <rect x="0" y="22" width="300" height="8" rx="4" fill="#334155"/>
+      <rect x="0" y="22" width="266" height="8" rx="4" fill="#10b981"/>
+    </g>
+
+    <!-- Food & Dining -->
+    <g transform="translate(350, 50)">
+      <text x="0" y="14" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">🍕 Food &amp; Dining</text>
+      <text x="220" y="14" fill="#f87171" font-family="system-ui, sans-serif" font-size="11" font-weight="700">$780 / $700 (OVER)</text>
+      <rect x="0" y="22" width="300" height="8" rx="4" fill="#334155"/>
+      <rect x="0" y="22" width="300" height="8" rx="4" fill="#ef4444"/>
+    </g>
+
+    <!-- Transportation -->
+    <g transform="translate(20, 110)">
+      <text x="0" y="14" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">🚗 Transportation</text>
+      <text x="220" y="14" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">$310 / $450</text>
+      <rect x="0" y="22" width="300" height="8" rx="4" fill="#334155"/>
+      <rect x="0" y="22" width="206" height="8" rx="4" fill="#3b82f6"/>
+    </g>
+
+    <!-- Entertainment -->
+    <g transform="translate(350, 110)">
+      <text x="0" y="14" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">🎬 Entertainment &amp; Subs</text>
+      <text x="220" y="14" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="11" font-weight="600">$240 / $250 (96%)</text>
+      <rect x="0" y="22" width="300" height="8" rx="4" fill="#334155"/>
+      <rect x="0" y="22" width="288" height="8" rx="4" fill="#f59e0b"/>
+    </g>
+  </g>
+
+  <!-- Bottom Stream: Recent Transactions -->
+  <g transform="translate(40, 442)" filter="url(#shadow)">
+    <rect width="1020" height="150" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Recent Transactions &amp; Recurring Payments</text>
+
+    <!-- Tx 1 -->
+    <g transform="translate(20, 40)">
+      <circle cx="16" cy="16" r="14" fill="#065f46"/>
+      <text x="11" y="21" fill="#34d399" font-family="system-ui, sans-serif" font-size="12">+</text>
+      <text x="44" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Client Retainer Payment</text>
+      <text x="44" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Income • Salary • Aug 22, 2026</text>
+      <text x="920" y="20" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">+$4,500.00</text>
+    </g>
+    <line x1="20" y1="78" x2="1000" y2="78" stroke="#334155" stroke-width="1"/>
+
+    <!-- Tx 2 -->
+    <g transform="translate(20, 88)">
+      <circle cx="16" cy="16" r="14" fill="#7f1d1d"/>
+      <text x="12" y="20" fill="#f87171" font-family="system-ui, sans-serif" font-size="12">-</text>
+      <text x="44" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">GitHub &amp; Cloud Infrastructure</text>
+      <text x="44" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">Expense • Utilities • Aug 21, 2026 • Recurring</text>
+      <text x="930" y="20" fill="#f87171" font-family="system-ui, sans-serif" font-size="13" font-weight="700">-$120.00</text>
+    </g>
+  </g>
+</svg>
